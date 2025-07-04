@@ -9,7 +9,7 @@ body {
 
 .container {
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   width: 95%;
 }
@@ -30,7 +30,7 @@ h1, h2 {
 }
 
 .video iframe {
-  width: 50%;
+  width: 100%;
   height: 56.25vw;
   max-height: 480px;
   border: none;
