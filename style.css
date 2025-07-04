@@ -1,38 +1,49 @@
 body {
   margin: 0;
-  font-family: 'Spiced Rum Supernova',sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: url('assets/fondo.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   text-align: center;
 }
 
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 90%;
+}
+
 .logo {
-  width: 600px;
-  margin-bottom: 0px;
+  width: 100px;
+  margin-bottom: 15px;
 }
 
 h1, h2 {
-  margin: 10px 0;
-  font-size: 1.5em;
+  margin: 8px 0;
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 .player {
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
 .video iframe {
-  width: 68%;
-  height: 52vw;
-  max-height: 480px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border-radius: 10px;
 }
 
+/* Audio personalizado */
 .audio-custom {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 15px;
+  margin-top: 25px;
 }
 
 .audio-header {
@@ -52,12 +63,12 @@ h1, h2 {
   background-color: #1db954;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   font-size: 16px;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .play-button:hover {
@@ -67,28 +78,33 @@ h1, h2 {
 canvas#waveform {
   width: 100%;
   height: 80px;
-  margin-top: 20px;
+  margin-top: 15px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* 💡 Responsive fino para móviles pequeños */
+@media (max-width: 480px) {
   .container {
-    padding: 20px;
+    padding: 15px;
   }
 
   .logo {
-    width: 80px;
+    width: 70px;
   }
 
   h1, h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+  }
+
+  .audio-header {
+    flex-direction: column;
+    font-size: 16px;
   }
 
   .play-button {
     font-size: 15px;
-    padding: 10px 15px;
+    padding: 10px 20px;
   }
 
   canvas#waveform {
