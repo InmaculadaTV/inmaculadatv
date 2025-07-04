@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inmaculada TV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Logo Inmaculada TV" class="logo" />
+    <h1>MEDIOS DE COMUNICACIÓN</h1>
+    <h2>DIÓCESIS DE CHOLUTECA, HONDURAS</h2>
+
+    <!-- Video -->
+    <div class="player video">
+      <iframe 
+        src="https://ssh101.com/securelive/index.php?id=inmaculadatv" 
+        frameborder="0" 
+        scrolling="no" 
+        width="100%" 
+        height="480" 
+        allowfullscreen 
+        webkitallowfullscreen 
+        mozallowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Audio personalizado -->
+    <div class="player audio-custom">
+      <div class="audio-header">
+        <span class="icon">🎙️</span>
+        <span class="title">Inmaculada Radio</span>
+      </div>
+
+      <button id="audio-toggle" class="play-button">▶️ Escuchar en Vivo</button>
+      <canvas id="waveform"></canvas>
+
+      <audio id="radio" src="https://stream.zeno.fm/r60qqv0zrfnvv" type="audio/mpeg" crossorigin="anonymous"></audio>
+    </div>
+  </div>
+
+  <script src="audio-player.js"></script>
+</body>
+</html>
