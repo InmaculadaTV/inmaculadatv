@@ -7,16 +7,6 @@ body {
   text-align: center;
 }
 
-.container {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  max-width: 0px;
-  margin: 40px auto;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  width: 90%;
-}
-
 .logo {
   width: 100px;
   margin-bottom: 15px;
