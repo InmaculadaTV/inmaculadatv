@@ -73,7 +73,7 @@ canvas#waveform {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .container {
     padding: 20px;
   }
