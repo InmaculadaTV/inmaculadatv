@@ -7,28 +7,36 @@ body {
   text-align: center;
 }
 
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 95%;
+}
+
 .logo {
-  width: 100px;
-  margin-bottom: 15px;
+  width: 130px;
+  margin-bottom: 25px;
 }
 
 h1, h2 {
-  margin: 8px 0;
-  font-size: 1.5rem;
+  margin: 10px 0;
+  font-size: 1.6rem;
   line-height: 1.3;
 }
 
 .player {
-  margin: 25px auto;
+  margin: 30px auto;
 }
 
 .video iframe {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
+  height: 56.25vw;
+  max-height: 480px;
+  border: none;
+  border-radius: 0;
 }
 
-/* Audio personalizado */
 .audio-custom {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
@@ -66,25 +74,24 @@ h1, h2 {
 }
 
 canvas#waveform {
-  width: 500%;
+  width: 100%;
   height: 80px;
   margin-top: 15px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
 
-/* 💡 Responsive fino para móviles pequeños */
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .container {
-    padding: 15px;
+    padding: 10px;
   }
 
   .logo {
-    width: 70px;
+    width: 150px;
   }
 
   h1, h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .audio-header {
