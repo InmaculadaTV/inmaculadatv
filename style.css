@@ -84,7 +84,7 @@ canvas#waveform {
 }
 
 /* 💡 Responsive fino para móviles pequeños */
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   .container {
     padding: 15px;
   }
