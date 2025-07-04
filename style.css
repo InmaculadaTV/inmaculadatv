@@ -66,7 +66,7 @@ h1, h2 {
 }
 
 canvas#waveform {
-  width: 100%;
+  width: 500%;
   height: 80px;
   margin-top: 15px;
   background-color: rgba(255, 255, 255, 0.1);
