@@ -10,7 +10,7 @@ body {
 .container {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  max-width: 900px;
+  max-width: 0px;
   margin: 40px auto;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -84,7 +84,7 @@ canvas#waveform {
 }
 
 /* 💡 Responsive fino para móviles pequeños */
-@media (max-width: 720px) {
+@media (max-width: 480px) {
   .container {
     padding: 15px;
   }
