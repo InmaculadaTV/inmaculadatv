@@ -7,16 +7,9 @@ body {
   text-align: center;
 }
 
-.container {
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 95%;
-}
-
 .logo {
-  width: 130px;
-  margin-bottom: 25px;
+  width: 500px;
+  margin-bottom: 50px;
 }
 
 h1, h2 {
@@ -30,7 +23,7 @@ h1, h2 {
 }
 
 .video iframe {
-  width: 100%;
+  width: 68%;
   height: 56.25vw;
   max-height: 480px;
   border: none;
